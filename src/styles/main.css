@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+footer, header {
+    background-color: hsl(153, 40%, 30%);
+    text-align: center;
+    border-radius: 10px;
+}
