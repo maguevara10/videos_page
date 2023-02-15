@@ -2,9 +2,30 @@ import React from "react";
 
 function Main(){
     return(
-    <h1>
-        MAIN
-    </h1>
+    <div>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+        <br/><br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+    </div>
     );
 }
 

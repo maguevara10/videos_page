@@ -1,0 +1,116 @@
+header{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 16vh;
+    background-size: cover;
+    background-position: center;
+    z-index: 99;
+}
+.nav{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    background-color: hsl(153,40%,35%);
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    transition: all 0.5s ease;
+    z-index: 99;
+}   
+.nav.active{
+    background: hsl(153,40%,35%);
+    padding: 15px;
+}
+header .nav.active a,
+header .nav.active .menu-btn{
+    color: white;
+}
+header .nav.active a:hover{
+    padding: 5px 10px;
+    background: white;
+    color: black;
+    border-radius: 15px;
+}
+header .nav.active img{
+    max-width: 75px;
+}
+.menu{
+    display: flex;
+    padding-left: 60%;
+}
+.menu li{
+    list-style: none;
+    margin: 10px;
+}
+
+.menu li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+
+.menu li a:hover{
+    padding: 5px 10px;
+    background: white;
+    color: black;
+    border-radius: 15px;
+}
+header .logo img{
+    width: 6vw;
+}
+.scrol{
+    height: 100px;
+}
+#ini:hover{
+    border: 1px solid black;
+}
+#ini{
+    padding: 3px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+.menu-btn{
+    color: white;
+    font-size: 20px;
+    display: none;
+}
+
+@media screen and (max-width:1024px){
+    .menu-btn{
+        display: block;
+        padding-left: 60%;
+    }
+    .nav{
+        z-index: 99;
+    }
+    .menu{
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding-left: 0;
+        width: 300px;
+        height: 100vh;
+        background: rgba(53,124,92,0.8);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s ease;
+        transform: translateY(-100%);
+    }
+    .menu li{
+        margin: 15px 0;
+    }
+    .menu.active{
+        transform: translateX(0);
+    }
+    .hamburguer{
+        width: 3vw;
+    }
+    header .logo img{
+        width: 10vw;
+    }
+}

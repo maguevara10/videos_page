@@ -8,8 +8,8 @@ body {
     font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
-footer, header {
+footer{
     background-color: hsl(153, 40%, 30%);
     text-align: center;
-    border-radius: 10px;
+    padding: 10px;
 }
