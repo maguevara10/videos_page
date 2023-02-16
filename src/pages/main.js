@@ -2,29 +2,11 @@ import React from "react";
 
 function Main(){
     return(
-    <div>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-
-        <br/><br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
+    <div className="mainInfo gridCentrado">
+        <div>
+            <h1>Descripción General</h1>
+        </div>
+        
     </div>
     );
 }

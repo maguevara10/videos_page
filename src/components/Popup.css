@@ -1,0 +1,168 @@
+/* @font-face {
+    font-family: Fresh Lychee;
+    src: url(../styles/assets/Fresh\ Lychee.ttf);
+} */
+.popup{
+    color:black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: grid;
+    place-content: center;
+    z-index: 100;
+}
+.encendido{
+    display: none;
+}
+.inner-popup{
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    background:white;
+}
+.inner-popup .close-btn{
+    position: absolute;
+    width: 3%;
+    top: 16px;
+    right: 16px;
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 0.4);;
+    border: 0;
+}
+
+.imagen{
+    width: 100%;
+}
+.imagen img{
+    width:100%;
+}
+
+.close-btn{
+    color: white;
+    font-size: 80%;
+    font-family: 'Courier New', Courier, monospace;
+}
+.contenidoPopup{
+    display: grid;
+    place-content: justify;
+    margin: 5%;
+    border: 10%;
+}
+.contenidoPopup hr{
+    margin:5%;
+}
+.contenidoPopup h1{
+    font-family: 'Courier New', Courier, monospace;
+    color: rgba(0, 119, 182, 1);
+    font-size: 2.8em;
+    font-weight: lighter;
+    text-align: center;
+    text-shadow: 3px 2px 5px rgba(0, 0, 0, 0.4);
+}
+.formulario label{
+    font-size: 1.4em;
+    text-shadow: 3px 2px 5px rgba(0, 0, 0, 0.4);
+}
+.formulario{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+input.login{
+    border: none;
+    height:26px;
+    margin:2%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+}
+.formulario button{
+    margin:5%;
+    background-color: rgba(0, 119, 182, 1);
+    font-family: 'Courier New', Courier, monospace;
+    color:white;
+    border:none;
+    border-radius: 8px;
+    height:15%;
+    width:60%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+    font-size: 1em;
+}
+.formulario button:hover{
+    background-color: rgb(103, 190, 237);
+    color:black;
+    transition: all .5s ease 0s;
+}
+.mainPopup{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+}
+.mainPopup .formulario{
+    display: block;
+    place-content: center;
+    text-align:center;
+    grid-template-columns: repeat(2,50%);
+    
+}
+.cuentas
+{
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+    border:none;
+    margin:0 2%;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1.05em;
+    color:white;
+    height: 150%;
+}
+#google
+{
+    background-color: rgb(220, 66, 52);
+    
+}
+#google:hover{
+    scale: 105%;
+    transition: all .5s ease 0s;
+}
+#facebook:hover{
+    scale: 105%;
+    transition: all .5s ease 0s;
+}
+
+#facebook
+{
+    background-color: rgb(25, 119, 243);
+}
+
+#regis
+{
+    text-align: center;
+    text-shadow: 3px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+#regis a{
+    color:rgb(54, 125, 93);
+}
+
+@media only screen and (max-width: 768px)
+{
+    .inner-popup{
+        width:70%;
+        margin:0 auto;
+    }
+    .inner-popup .close-btn{
+        position: absolute;
+        width: 4%;
+    }
+    .imagen{
+        display: none;
+    }
+    .mainPopup{
+        grid-template-columns: repeat(1,100%);
+    }
+}
+.imagen{
+    max-width: 400px;
+}

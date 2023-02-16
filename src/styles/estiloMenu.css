@@ -12,30 +12,13 @@ header{
     position: fixed;
     width: 100%;
     display: flex;
-    background-color: hsl(153,40%,35%);
+    background-color: rgba(0, 119, 182, 1);
     align-items: center;
     justify-content: center;
     padding: 5px;
     transition: all 0.5s ease;
     z-index: 99;
 }   
-.nav.active{
-    background: hsl(153,40%,35%);
-    padding: 15px;
-}
-header .nav.active a,
-header .nav.active .menu-btn{
-    color: white;
-}
-header .nav.active a:hover{
-    padding: 5px 10px;
-    background: white;
-    color: black;
-    border-radius: 15px;
-}
-header .nav.active img{
-    max-width: 75px;
-}
 .menu{
     display: flex;
     padding-left: 60%;
@@ -64,14 +47,6 @@ header .logo img{
 .scrol{
     height: 100px;
 }
-#ini:hover{
-    border: 1px solid black;
-}
-#ini{
-    padding: 3px;
-    border: 1px solid black;
-    border-radius: 8px;
-}
 .menu-btn{
     color: white;
     font-size: 20px;
@@ -93,7 +68,7 @@ header .logo img{
         padding-left: 0;
         width: 300px;
         height: 100vh;
-        background: rgba(53,124,92,0.8);
+        background: rgba(0, 119, 182, 0.8);
         display: flex;
         flex-direction: column;
         align-items: center;
