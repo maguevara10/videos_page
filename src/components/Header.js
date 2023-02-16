@@ -20,7 +20,8 @@ function Header() {
                     <li><a href="videos">Vídeos</a></li>
                     <li><a href="quienesSomos">Sobre Nosotros</a></li>
                     <li><a href="contactanos">Contáctanos</a></li>
-                    <li onClick={prender}><a>Iniciar Sesión</a></li>
+                    <li className="validable" id="iniSes" onClick={prender}><a>Iniciar Sesión</a></li>
+                    <li className="validable encendido" id="usu" onClick={prender}><a>Usuario</a></li>
                 </ul>
 
                 <div className="menu-btn" onClick={() => {
